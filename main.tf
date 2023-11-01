@@ -27,7 +27,7 @@ resource "aws_security_group" "sg_ci_demo_instances" {
     description = "All connections from my Computer"
     from_port   = 22
     to_port     = 22
-    protocol    = "-1"
+    protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
 
