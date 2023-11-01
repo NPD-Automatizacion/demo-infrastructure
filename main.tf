@@ -2,7 +2,7 @@ terraform {
   required_version = "~>1.5.7"
 
   backend "s3" {
-    bucket  = "generalinfrastructure"
+    bucket  = "cidemo"
     key     = "infra/terraform.state"
     region  = "us-east-1"
   }
@@ -20,7 +20,7 @@ provider "aws" {
 }
 
 # AWS Security Group
-resource "aws_security_group" "sg_instances_performance" {
+resource "aws_security_group" "sg_ci_demo_instances" {
   name = "Allow ssh from my ip"
 
   ingress {
