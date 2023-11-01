@@ -1,21 +1,7 @@
-variable "master_instance_type" {
+variable "demo_instance_type" {
   type    = string
   default = "c5.xlarge"
 }
-
-variable "slave_instance_type" {
-  type    = string
-  default = "c5.2xlarge"
-}
-
-variable "master_instance_count" {
-  type = number
-}
-
-variable "slave_instance_count" {
-  type = number
-}
-
 variable "ami" {
   type        = string
   description = "AMI for instance OS"
