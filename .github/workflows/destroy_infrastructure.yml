@@ -14,7 +14,7 @@ jobs:
               with:
                 aws-region: us-east-1
                 role-session-name: samplerolesession
-                role-to-assume: arn:aws:iam::400793929034:role/general-performance-role-githubactions
+                role-to-assume: arn:aws:iam::400793929034:role/ci-demo-role
             - name: Init
               run: terraform init
             - name: destroy infrastructure
